@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PAMMObileApp';
+
+  cardView=false;
+
+  onClick(){
+    this.cardView = !this.cardView
+  }
 }

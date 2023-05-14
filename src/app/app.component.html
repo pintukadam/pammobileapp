@@ -1,2 +1,10 @@
 <app-searchpanel></app-searchpanel>
-<app-card></app-card>
+
+    <div class="view-toggle"> 
+        <i (click)="onClick()" class="material-icons">view_module</i>
+        <i (click)="onClick()" class="material-icons">view_headline</i>
+    </div>
+    
+    <app-grid *ngIf="cardView"></app-grid>
+
+    <app-card  *ngIf="!cardView"></app-card>

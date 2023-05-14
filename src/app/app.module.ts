@@ -8,15 +8,19 @@ import {MaterialExampleModule} from '../material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './card/card.component';
 import { SearchpanelComponent } from './searchpanel/searchpanel.component';
+import { GridComponent } from './grid/grid.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    SearchpanelComponent
+    SearchpanelComponent,
+    GridComponent
     
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MaterialExampleModule,
